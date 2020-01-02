@@ -18,12 +18,12 @@ class App extends Component {
 	   return ( 
 	    <div className="App">
 	      <header className="App-header">
-		<img src={logo} className="App-logo" alt="logo" />
+		<p>Welcome to the FryMeYung Website</p> 
+		<p>You've been roasted {this.state.counter} times</p> 
+		<button className='btn btn-primary btn-lg' onClick={this.increaseCounter}>Roast Me</button>
 		<p>
 			{this.state.roastMessage}
 		</p>
-		<p>You've been roasted {this.state.counter} times</p> 
-		<button className='btn btn-primary btn-lg' onClick={this.increaseCounter}>Roast Me</button>
 	      </header>
 	    </div>
 	)
